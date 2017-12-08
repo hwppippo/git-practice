@@ -1,0 +1,11 @@
+rebase命令的使用场景
+commit --amend 可以修复最新 commit 的错误，但如果是倒数第二个 commit 写错了，怎么办？
+使用rebase -i方法可以解决
+介绍了交互式 rebase，它可以在 rebase 开始之前指定一些额外操作。交互式 rebase 最常用的场景是修改写错的 commit，但也可以用作其他用途。它的大致用法：
+
+使用方式是 git rebase -i 目标commit；
+在编辑界面中指定需要操作的 commits 以及操作类型；
+操作完成之后用 git rebase --continue 来继续 rebase 过程。...
+
+https://juejin.im
+掘金 — 一个帮助开发者成长的社区
